@@ -1,5 +1,24 @@
+
+let chave = "cebcd482eda57fa9a6714c1c2ba91885"
+
+function colocarnatela(dados){
+   console.log(dados)
+
+   document.querySelector(".cidade").innerHTML = "tempo em " + dados.name 
+
+}
+
+
+async function buscarcidade(cidade){
+    let dados = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + cidade + "&appid=" +  chave + "&lang=pt_br" + "&units=metric" )
+
+    .then(resposta => resposta.json() )
+
+    colocarnatela(dados)
+}
+
 function cliqueinobotao(){
    let cidade = document.querySelector(".input-cidade").value
 
-   console.log(cidade)
+   buscarcidade(cidade)
 }
