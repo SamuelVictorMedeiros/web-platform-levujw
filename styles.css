@@ -1,68 +1,74 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-   display: flex;
-   justify-content: center;
-   align-items:center;
-   height: 100vh; /* altura / vh - altura */
-   width: 100vw; /* vw - largura */
-   background-color: #38ADAE;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* altura / vh - altura */
+  width: 100vw; /* vw - largura */
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
 }
 
-.caixa-maior{
-  background-color: black;/* troca cor de fundo */
+.caixa-maior {
+  background-color: black; /* troca cor de fundo */
   width: 95%; /* largura */
+  max-width: 420px;
   opacity: 0.8; /*transparencia do item */
   padding: 20px;
   border-radius: 25px;
-  
 }
 
-input{
-   border: none; /* borda do elemento */
-   outline: none; /* borda quando seleciona o elemento de dentro pra fora */
-   padding: 10px; /*espacamento interno */
-   border-radius:24px; /* arredonda as bordas */
-   font-size: 20px; 
-   background-color: #7c7c7c2b;
-   cursor: pointer;
-
+input {
+  border: none; /* borda do elemento */
+  outline: none; /* borda quando seleciona o elemento de dentro pra fora */
+  padding: 10px; /*espacamento interno */
+  border-radius: 24px; /* arredonda as bordas */
+  font-size: 20px;
+  background-color: #7c7c7c2b;
+  color: white;
+  width: calc(100% - 100px);
 }
 
-button{
-    border: none;
-    outline:none;
-    border-radius: 50px;
-    background-color: #7c7c7c3b;
-    float: right;
+button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #7c7c7c3b;
+  float: right;
+  cursor: pointer;
 }
 
-button:hover{
+button:hover {
   background-color: #7c7c7c6b;
 }
 
+.caixa-media {
+  margin-top: 30px;
+}
 
-
-
-.lupa{
+.lupa {
   height: 20px;
 }
 
-h2{
+h2 {
   color: white;
   font-size: 28px; /* tamanho do texto */
 }
-.temp{
+.temp {
   color: white;
+  margin-top: 30px;
 }
 
-.descricao{
+.descricao {
   color: white;
+  margin-top: 30px;
 }
-p{
-  color:white;
+p {
+  color: white;
+  margin-top: 30px;
 }
