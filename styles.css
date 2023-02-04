@@ -52,6 +52,12 @@ button:hover {
   margin-top: 30px;
 }
 
+.caixa-menor {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+
 .lupa {
   height: 20px;
 }
@@ -67,9 +73,17 @@ h2 {
 
 .descricao {
   color: white;
+  margin-left: 15px;
+  height: 50px;
+  text-transform: capitalize; /* deixa a primeira letra maiuscula */
+}
+
+p {
+  color: white;
   margin-top: 30px;
 }
-p {
+
+.umidade {
   color: white;
   margin-top: 30px;
 }
